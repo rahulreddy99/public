@@ -74,7 +74,7 @@ public class SmokeTest {
 		tour.confirmbknow();
 		commonclass.takescrrenshot();
 		
-		System.out.println("Success");
+		System.out.println("Successful");
 		
 		//driver.quit();
 		}
