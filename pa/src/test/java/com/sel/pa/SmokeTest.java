@@ -74,6 +74,8 @@ public class SmokeTest {
 		tour.confirmbknow();
 		commonclass.takescrrenshot();
 		
+		System.out.println("Success");
+		
 		//driver.quit();
 		}
 /*	@Test(priority = 2, groups ="SmokeTest")
