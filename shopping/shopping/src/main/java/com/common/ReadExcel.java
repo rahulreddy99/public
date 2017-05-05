@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
+import org.testng.util.Strings;
 
 import jxl.Cell;
 import jxl.Sheet;
@@ -20,7 +21,7 @@ public class ReadExcel {
 	@DataProvider(name = "Test")
 	
 	public  Object [] [] Rexcel() throws BiffException, IOException {
-		File src = new File("C:\\Users\\rahul\\workspace1\\shopping\\src\\test\\resorces\\Results.xls");
+		File src = new File("C:\\Users\\rahul\\workspace1\\shopping\\src\\test\\resorces\\shopping.xls");
 		
 		FileInputStream sr = new FileInputStream(src);
 		System.out.println(sr);
@@ -45,43 +46,14 @@ public class ReadExcel {
 		}
 		return inputdata;
 		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-		
-		
-	
-				
 
-
-			
-			
-			
-			
+		
 		
 		}
-	}
 
 
-/*	Workbook wb = Workbook.getWorkbook(f);
-Sheet sh = wb.getSheet(0);
-int rows = sh.getRows();
-int Cols = sh.getColumns();
-System.out.println(rows);
 
-for(int i=0; i<rows; i++){
-	for(int j=0; j<Cols; j++){
-		//System.out.println("value of     :"  + );
-		Cell c = sh.getCell(j, i);
-		inputsheet [i] [j] = c.getContents();
-		
-		
-	}
-}*/
+}
+
+
 
