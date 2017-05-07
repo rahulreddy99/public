@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,7 @@ public class Commonclass {
 	public void Actionsclass(WebElement src, WebElement des){
 		Actions action = new Actions(driver);
 		action.dragAndDrop(src, des).build().perform();
+		
 	}
 	public void takescrrenshot() {
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -47,5 +49,11 @@ public class Commonclass {
 	    Calendar cal = Calendar.getInstance();
 	    String cal1 = dateFormat.format(cal.getTime());
 	    return cal1;
+	}
+	
+	public void javascriptexecutor(){
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		
 	}
 }

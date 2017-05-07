@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import com.common.Common;
 import com.common.Configuration;
+import com.common.ReadExcel;
 
 import autopract.shoppingpages.WomenPage;
 
@@ -18,6 +19,7 @@ public class SmokeTest {
 	
 	public WomenPage wpage;
 	public Common cm;
+	public ReadExcel re;
 	
 	
 	
