@@ -18,15 +18,15 @@ public class ReadExcel {
 	
 	public WebDriver driver;
 	
-	@DataProvider(name = "Test")
+	@DataProvider(name = "testdata")
 	
 	public  Object [] [] Rexcel() throws BiffException, IOException {
-		File src = new File("C:\\Users\\rahul\\workspace1\\shopping\\src\\test\\resorces\\shopping.xls");
+		File src = new File("C:\\Users\\rahul\\workspace1\\shopping\\src\\test\\resorces\\shopping1.xls");
 		
 		FileInputStream sr = new FileInputStream(src);
 		System.out.println(sr);
 		Workbook wb = Workbook.getWorkbook(sr);
-		Sheet sh = wb.getSheet(0);
+		Sheet sh = wb.getSheet(1);
 		
 		int rows = sh.getRows();
 		int cols = sh.getColumns();

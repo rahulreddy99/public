@@ -12,7 +12,7 @@ public class WomenPage {
 	public  WebDriver driver = Configuration.browser();
 	
 	
-	@FindBy(linkText = "//a[@href='http://automationpractice.com/index.php?id_category=3&controller=category']")
+	@FindBy(xpath =".//*[@id='block_top_menu']/ul/li[1]/a")
 	WebElement wtab;
 	@FindBy (xpath= "//a[text()='Casual Dresses']")
 	WebElement casutab;
@@ -20,6 +20,9 @@ public class WomenPage {
 	WebElement searchtab;
 	@FindBy(name="submit_search")
 	WebElement submit;
+	@FindBy(xpath =".//*[@id='center_column']/ul/li[1]/div/div[2]/div[2]/a[1]/span")
+	WebElement addtocart;
+	
 	
 	
 	
@@ -47,6 +50,10 @@ public class WomenPage {
 	}
 	public void submit(){
 		submit.click();
+	}
+	
+	public void addingtocart(){
+		addtocart.click();
 	}
 	
 	

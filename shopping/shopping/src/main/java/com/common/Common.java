@@ -24,14 +24,19 @@ public class Common {
 	
 	
 	
-	
-	public void Actionclass(WebElement ac){
+/*	
+	public void Actionclass(WebElement ac, By by){ 
 		Actions action = new Actions(driver);
 		
-		action.moveToElement(ac).build().perform();
+		action.moveToElement(ac).moveToElement((WebElement) by).click().build().perform();
+	
 		
 		
 		
+	}*/
+	public void Actionclass(WebElement wb){
+		Actions action = new Actions(driver);
+		action.moveToElement(wb).click().build().perform();
 	}
 
 	public void Actionclass1(WebElement ac){
