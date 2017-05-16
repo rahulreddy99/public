@@ -1,50 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20" started-at="2017-05-08T17:59:49Z" finished-at="2017-05-08T17:59:49Z">
+  <suite name="Default suite" duration-ms="8696" started-at="2017-05-15T19:52:33Z" finished-at="2017-05-15T19:52:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20" started-at="2017-05-08T17:59:49Z" finished-at="2017-05-08T17:59:49Z">
-      <class name="autopract.shopping.DataDriven">
-        <test-method status="FAIL" signature="adminLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:autopract.shopping.DataDriven@7ce026d3]" name="adminLogin" duration-ms="0" started-at="2017-05-08T13:59:49Z" data-provider="testdata" finished-at="2017-05-08T13:59:49Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method public void autopract.shopping.DataDriven.adminLogin(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException,jxl.read.biff.BiffException,java.io.IOException requires a @DataProvider named : testdata]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method public void autopract.shopping.DataDriven.adminLogin(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException,jxl.read.biff.BiffException,java.io.IOException requires a @DataProvider named : testdata
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:336)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:498)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="8696" started-at="2017-05-15T19:52:33Z" finished-at="2017-05-15T19:52:41Z">
+      <class name="Webmethods.Windowhandles">
+        <test-method status="PASS" signature="excute()[pri:0, instance:Webmethods.Windowhandles@57baeedf]" name="excute" duration-ms="8671" started-at="2017-05-15T15:52:33Z" finished-at="2017-05-15T15:52:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminLogin -->
-      </class> <!-- autopract.shopping.DataDriven -->
+        </test-method> <!-- excute -->
+      </class> <!-- Webmethods.Windowhandles -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

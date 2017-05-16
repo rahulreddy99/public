@@ -34,14 +34,15 @@ public class SmokeTest {
 		
 	}
 	
-	@Test(dataProvider = "Tests")
+	@Test
 	public  void Women() throws Throwable {
 
 		wpage.sclick();
 		/*cm.explicitwait((By.xpath("//input[@name='search_query']")), 7);*/
 		Thread.sleep(3000);
-		wpage.search("Tab");
-		wpage.submit();
+		cm.Actionclass(driver.findElement(By.xpath("//a[text()='Women']")));
+		/*wpage.search("Tab");
+		wpage.submit();*/
 	//page.casualDresss();
 		}
 	@AfterMethod

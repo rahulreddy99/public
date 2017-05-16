@@ -36,7 +36,7 @@ public class Common {
 	}*/
 	public void Actionclass(WebElement wb){
 		Actions action = new Actions(driver);
-		action.moveToElement(wb).click().build().perform();
+		action.moveToElement(wb).build().perform();
 	}
 
 	public void Actionclass1(WebElement ac){
