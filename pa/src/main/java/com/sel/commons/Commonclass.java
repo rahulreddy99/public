@@ -53,6 +53,7 @@ public class Commonclass {
 	
 	public void javascriptexecutor(){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//js.executeScript(script, args)
 		
 		
 	}
